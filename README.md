@@ -45,6 +45,7 @@ go install github.com/codegram01/goff@latest
 ### Option 2: Install and build from source
 ```sh
 git clone https://github.com/codegram01/goff.git
+
 cd goff
 
 # Run code: 
