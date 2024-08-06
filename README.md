@@ -46,7 +46,6 @@ go install github.com/codegram01/goff@latest
 ```sh
 git clone https://github.com/codegram01/goff.git
 cd goff
-```
 
 # Run code: 
 go run . 
