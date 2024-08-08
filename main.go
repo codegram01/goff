@@ -46,8 +46,8 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		
-		fmt.Println(Yellow + "## Changed:" + Reset)
+
+		fmt.Println(Yellow + "=== CHANGED:" + Reset)
 		fmt.Printf("%s", changed)
 	}
 

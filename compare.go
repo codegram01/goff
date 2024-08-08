@@ -90,7 +90,7 @@ func DoCompareFile(pathOldFile, pathNewFile string) ([]byte, error) {
 // log compare
 func LogCompare(compare *Compare) {
 	if compare.RemovedFiles != nil {
-		fmt.Println(Red + "## Removed:" + Reset)
+		fmt.Println(Red + "=== REMOVED:" + Reset)
 		for _, path := range compare.RemovedFiles {
 			fmt.Printf("+ %s\n", path)
 		}
@@ -98,7 +98,7 @@ func LogCompare(compare *Compare) {
 
 	if compare.CreatedFiles != nil {
 		fmt.Println()
-		fmt.Println(Green + "## Created:" + Reset)
+		fmt.Println(Green + "=== CREATED:" + Reset)
 		for _, path := range compare.CreatedFiles {
 			fmt.Printf("+ %s\n", path)
 		}
@@ -106,7 +106,7 @@ func LogCompare(compare *Compare) {
 
 	if compare.Changed != nil {
 		fmt.Println()
-		fmt.Println(Yellow + "## Changed:" + Reset)
+		fmt.Println(Yellow + "=== CHANGED:" + Reset)
 		for _, change := range compare.Changed {
 			fmt.Printf("%s", change)
 		}
